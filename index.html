@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-bar-container">
+      <button class="btn-home-icon">
+        <img src="./img/home.png" alt="home" height="30px" />
+      </button>
+
+      <div class="menu-bar">
+        <button class="btn-home">
+          <p>Home</p>
+        </button>
+
+        <button class="btn-intro">
+          <p>Intro</p>
+        </button>
+
+        <button class="btn-skills">
+          <p>Skills</p>
+        </button>
+
+        <button class="btn-project">
+          <p>Project</p>
+        </button>
+
+        <button class="btn-contact">
+          <p>Contact</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="contact-form-container">
+      <form
+        class="gform"
+        method="POST"
+        data-email="bm1549@naver.com"
+        action="https://script.google.com/macros/s/AKfycbzPmL3iS02mUvyDV2dnY2FKGNqWsExf48W35kGto8E3jjJm5rjq0ZprDMt6M9cPsRsH/exec"
+      >
+        <!-- 양식 동작을 스크립트 url로 변경 -->
+
+        <article id="contact">
+          <div class="contact-container">
+            <div class="contact-menu">
+              <h2 class="en-contact-me">Contact Me</h2>
+              <h1 class="ko-contact">문의사항</h1>
+            </div>
+
+            <div class="contact-input-info">
+              <div class="input-container">
+                <div class="name-email-container">
+                  <div class="name-wrapper">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contact-input-name"
+                      name="name"
+                      placeholder="이름"
+                    />
+                  </div>
+                  <div class="email-wrapper">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contact-input-email"
+                      name="email"
+                      placeholder="이메일"
+                    />
+                  </div>
+                </div>
+
+                <div class="title-wrapper">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contact-input-title"
+                    name="title"
+                    placeholder="제목"
+                  />
+                </div>
+
+                <div class="content-wrapper">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="contact-input-content"
+                    name="message"
+                    placeholder="내용"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#user-submit-modal"
+                >
+                  이메일 보내기
+                </button>
+              </div>
+
+              <div class="contact-info-container">
+                <div class="phone-container">
+                  <div class="icon-container">
+                    <span class="material-symbols-outlined"> call </span>
+                  </div>
+                  <div class="kategorie">
+                    <div class="kategorie-name">Call Me</div>
+                    <div class="content">010-9419-1549</div>
+                  </div>
+                </div>
+                <div class="email-container">
+                  <div class="icon-container">
+                    <span class="material-symbols-outlined"> mail </span>
+                  </div>
+                  <div class="kategorie">
+                    <div class="kategorie-name">E-mail</div>
+                    <div class="content">bm1549@naver.com</div>
+                  </div>
+                </div>
+                <div class="address-container">
+                  <div class="icon-container">
+                    <span class="material-symbols-outlined"> location_on </span>
+                  </div>
+                  <div class="kategorie">
+                    <div class="kategorie-name">Address</div>
+                    <div class="content">제주특별자치도</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </form>
+    </div>
+
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
